@@ -170,5 +170,12 @@ cython_debug/
 # Ruff stuff:
 .ruff_cache/
 
+#OS stuff:
+.DS_Store
+Thumbs.db
+
+#VS Code settings
+.vscode/
+
 # PyPI configuration file
 .pypirc

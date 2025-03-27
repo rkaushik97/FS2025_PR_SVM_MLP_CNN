@@ -1,0 +1,15 @@
+[project]
+name = "my-pytorch-project"
+version = "0.1.0"
+description = "Deep learning experiments"
+dependencies = [
+  "torch",
+  "torchvision",
+  "torchaudio",
+  "jupyter",
+  "matplotlib",
+  "scikit-learn",
+  "pandas",
+]
+
+[tool.uv]
