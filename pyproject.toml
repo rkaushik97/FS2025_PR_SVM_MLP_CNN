@@ -10,6 +10,7 @@ dependencies = [
   "matplotlib",
   "scikit-learn",
   "pandas",
+  "joblib>=1.4.2",
 ]
 
 [tool.uv]
