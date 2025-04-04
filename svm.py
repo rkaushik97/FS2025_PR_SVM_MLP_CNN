@@ -11,13 +11,13 @@ import joblib
 
 tuning_pipeline = Pipeline([
     ('scaler', StandardScaler()),
-    ('pca', PCA(n_components=0.95)),  # Or a fixed number like 50 or 100
-    ('svm', SVC(kernel='rbf'))  # You can try 'linear' or tune kernel
+    ('pca', PCA(n_components=0.93)),
+    ('svm', SVC(kernel='rbf'))
 ])
 
 model = Pipeline([
     ('scaler', StandardScaler()),
-    ('pca', PCA(n_components=0.95)),
+    ('pca', PCA(n_components=0.93)),
     ('svm', SVC(C=10, gamma=0.001, kernel='rbf', class_weight='balanced'))
 ])
 
@@ -32,8 +32,8 @@ def find_best_params(data_path, param_grid = None, train_size = 0.2):
     X_tune, _, y_tune, _ = train_test_split(X_train, y_train, train_size = train_size, stratify=y_train, random_state=42)
     if param_grid == None:
         param_grid = {
-            'svm__C': [5, 10, 15, 20, 50],
-            'svm__gamma': [5e-4, 0.001, 0.002, 0.005]
+            'svm__C': [8, 9, 10, 11, 12],
+            'svm__gamma': [0.0008, 0.0009, 0.001, 0.0011, 0.0012]
         }
     grid = GridSearchCV(tuning_pipeline, param_grid, cv=3, verbose=2)
     grid.fit(X_tune, y_tune)
@@ -50,13 +50,14 @@ X_test, y_test = prepare_data("data/test.csv")
 X_smaller, _, y_smaller, _ = train_test_split(X_train, y_train, train_size = 0.4, stratify=y_train, random_state=42)
 
 #FIND BEST HYPERPARAMETERS:
-#find_best_params("data/train.csv")
+#Èfind_best_params("data/train.csv")
+#Best parameters: {'svm__C': 8, 'svm__gamma': 0.0012}
 #Best parameters: {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
 
 # #TEST MODEL:
 print("Training")
 model.fit(X_train, y_train)
 # #STORE MODEL:
-joblib.dump(model, "svm_model.joblib")
+#joblib.dump(model, "svm_model.joblib")
 test_model(model, X_test=X_test, y_test=y_test)
-# #SVM: Improve Accuracy: 0.9553 -> 0.9745
+# #SVM: Improve Accuracy: 0.9745 -> 0.9756
