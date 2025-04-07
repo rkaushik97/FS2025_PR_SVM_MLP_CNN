@@ -1,10 +1,11 @@
 ##  Support Vector Machine (SVM)
 
 **Best Hyperparameters:**
-- X
+- C = 9
+- gamma = 0.0011
+- kernel = rbf
 
-
-**Test Accuracy:** `0.0`
+**Test Accuracy:** `0.9979`
 
 ## Multi-Layer Perceptron (MLP)
 **Best Hyperparameters:**
