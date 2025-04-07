@@ -10,9 +10,9 @@
 **Loss and accuracy**
 | Trial ID | Accuracy | Loss | 
 |----------|----------|------|
-| Trial 01 |  ![Trial 01_acc](svm/plots/1.png) | ![Trial 01_loss](svm/plots/2.png) |
-| Trial 02 |  ![Trial 02_acc](svm/plots/3.png) | ![Trial 02_loss](svm/plots/4.png) |
-| Trial 03 |  ![Trial 01_acc](svm/plots/5.png) | ![Trial 01_loss](svm/plots/6.png) |
+| Trial 01 |  ![Trial 01_acc](svm/plots/plot1.png) | ![Trial 01_loss](svm/plots/plot2.png) |
+| Trial 02 |  ![Trial 02_acc](svm/plots/plot3.png) | ![Trial 02_loss](svm/plots/plot4.png) |
+| Trial 03 |  ![Trial 01_acc](svm/plots/plot5.png) | ![Trial 01_loss](svm/plots/plot6.png) |
 
 ## Multi-Layer Perceptron (MLP)
 **Best Hyperparameters:**
