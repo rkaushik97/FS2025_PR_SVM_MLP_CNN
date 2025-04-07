@@ -5,7 +5,11 @@
 **Best Hyperparameters:**
 - Hidden Size = 256
 - Learning Rate = 0.001
+
+
 **Test Accuracy:** `0.9759`
+
+
 **Training and Validation Curves:**
 
 Below are the training and validation loss/accuracy plots for different hyperparameter trials:
@@ -34,11 +38,13 @@ Below are the training and validation loss/accuracy plots for different hyperpar
 
 
 ## Convolutional Neural Network (CNN)
+
 **Best Hyperparameters:**
 - kernel_sizes = [5,5]
 - num_layers = 2
 - learning_rate = 0.001
 - num_epochs = 5
+
 **Test Accuracy:** `0.9911`
 
 **Training and Validation Curves:**
