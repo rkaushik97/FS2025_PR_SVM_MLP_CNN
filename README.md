@@ -67,31 +67,6 @@ The CNN implementation uses convolutional layers for feature extraction followed
   - Learning rate optimization
   - Feature aggregation experiments
 
-## Results
-
-### SVM Results
-
-Our best SVM model achieved an accuracy of 97.52% on the test set using the following hyperparameters:
-- Kernel: RBF
-- C: 9
-- Gamma: 0.0011
-- Class weight: 'balanced'
-
-The model uses a preprocessing pipeline that includes StandardScaler for normalization and PCA (retaining 93% of variance) for dimensionality reduction. Multiple grid searches were performed to identify the optimal hyperparameters, testing both linear and RBF kernels with various C and gamma values.
-
-### MLP Results
-
-The MLP achieved an accuracy of 98.55% on the test set with a hidden layer size of 128 neurons and a learning rate of 0.001.
-
-### CNN Results
-
-Our best CNN model reached an accuracy of 99.11% on the test set with the following configuration:
-- Kernel size: [5, 5] (5×5 filters)
-- Number of convolutional layers: 2
-- Learning rate: 0.001
-- Training epochs: 5
-
-This configuration was identified through extensive hyperparameter optimization, testing 24 different combinations of kernel sizes (3×3, 5×5, 7×7), number of layers (1, 2), and learning rates (0.0001, 0.001, 0.01, 0.1). The model demonstrated excellent convergence properties with training accuracy reaching 99.42% and validation accuracy of 99.11%.
 
 ## Usage
 
