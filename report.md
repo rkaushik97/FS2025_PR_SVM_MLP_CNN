@@ -6,6 +6,31 @@
 - Hidden Size = 256
 - Learning Rate = 0.001
 **Test Accuracy:** `0.9759`
+**Training and Validation Curves:**
+
+Below are the training and validation loss/accuracy plots for different hyperparameter trials:
+| Trial ID | Plot |
+|----------|------|
+| Trial 01 | ![Trial 01](mlp/plots/1.png) |
+| Trial 02 | ![Trial 02](mlp/plots/2.png) |
+| Trial 03 | ![Trial 03](mlp/plots/3.png) |
+| Trial 04 | ![Trial 04](mlp/plots/4.png) |
+| Trial 05 | ![Trial 05](mlp/plots/5.png) |
+| Trial 06 | ![Trial 06](mlp/plots/6.png) |
+| Trial 07 | ![Trial 07](mlp/plots/7.png) |
+| Trial 08 | ![Trial 08](mlp/plots/8.png) |
+| Trial 09 | ![Trial 09](mlp/plots/9.png) |
+| Trial 10 | ![Trial 10](mlp/plots/10.png) |
+| Trial 11 | ![Trial 11](mlp/plots/11.png) |
+| Trial 12 | ![Trial 12](mlp/plots/12.png) |
+| Trial 13 | ![Trial 13](mlp/plots/13.png) |
+| Trial 14 | ![Trial 14](mlp/plots/14.png) |
+| Trial 15 | ![Trial 15](mlp/plots/15.png) |
+| Trial 16 | ![Trial 16](mlp/plots/16.png) |
+| Trial 17 | ![Trial 17](mlp/plots/17.png) |
+| Trial 18 | ![Trial 18](mlp/plots/18.png) |
+| Trial 19 | ![Trial 19](mlp/plots/19.png) |
+| Trial 20 | ![Trial 20](mlp/plots/20.png) |
 
 
 ## Convolutional Neural Network (CNN)
