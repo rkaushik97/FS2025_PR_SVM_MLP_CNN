@@ -1,11 +1,11 @@
-# MNIST Classification Framework
+# FS2025_PR_SVM_MLP_CNN
 
 This repository contains implementations of three different classification methods applied to the MNIST dataset: Support Vector Machines (SVM), Multilayer Perceptron (MLP), and Convolutional Neural Networks (CNN). This project is part of the Pattern Recognition course at the University of Fribourg, Spring Semester 2025.
 
 ## Project Structure
 
 ```
-MNIST-Classification-Framework/
+FS2025_PR_SVM_MLP_CNN/
 ├── MLP.ipynb                 # Jupyter notebook with MLP implementation and experiments
 ├── cnn/                      # CNN implementation directory
 │   ├── logs.txt              # Training logs and experiment results
