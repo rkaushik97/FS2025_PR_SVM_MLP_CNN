@@ -1,5 +1,9 @@
 ##  Support Vector Machine (SVM)
+**Best Hyperparameters:**
+- 
 
+
+**Test Accuracy:** `0.0`
 
 ## Multi-Layer Perceptron (MLP)
 **Best Hyperparameters:**
