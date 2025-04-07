@@ -15,15 +15,15 @@ Below are the training and validation loss/accuracy plots for different hyperpar
 
 | Trial ID | Plot |
 |----------|------|
-| Trial 01 | ![Trial 01](cnn/plots/trial_01_curves.png) |
-| Trial 02 | ![Trial 02](cnn/plots/trial_02_curves.png) |
-| Trial 03 | ![Trial 03](cnn/plots/trial_03_curves.png) |
-| Trial 04 | ![Trial 04](cnn/plots/trial_04_curves.png) |
-| Trial 05 | ![Trial 05](cnn/plots/trial_05_curves.png) |
-| Trial 06 | ![Trial 06](cnn/plots/trial_06_curves.png) |
-| Trial 07 | ![Trial 07](cnn/plots/trial_07_curves.png) |
-| Trial 08 | ![Trial 08](cnn/plots/trial_08_curves.png) |
-| Trial 09 | ![Trial 09](cnn/plots/trial_09_curves.png) |
+| Trial 01 | ![Trial 01](cnn/plots/trial_1_curves.png) |
+| Trial 02 | ![Trial 02](cnn/plots/trial_2_curves.png) |
+| Trial 03 | ![Trial 03](cnn/plots/trial_3_curves.png) |
+| Trial 04 | ![Trial 04](cnn/plots/trial_4_curves.png) |
+| Trial 05 | ![Trial 05](cnn/plots/trial_5_curves.png) |
+| Trial 06 | ![Trial 06](cnn/plots/trial_6_curves.png) |
+| Trial 07 | ![Trial 07](cnn/plots/trial_7_curves.png) |
+| Trial 08 | ![Trial 08](cnn/plots/trial_8_curves.png) |
+| Trial 09 | ![Trial 09](cnn/plots/trial_9_curves.png) |
 | Trial 10 | ![Trial 10](cnn/plots/trial_10_curves.png) |
 | Trial 11 | ![Trial 11](cnn/plots/trial_11_curves.png) |
 | Trial 12 | ![Trial 12](cnn/plots/trial_12_curves.png) |
