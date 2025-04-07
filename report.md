@@ -5,14 +5,14 @@
 - gamma = 0.0011
 - kernel = rbf
 
-**Test Accuracy:** `0.9979`
+**Test Accuracy:** `0.9752`
 
 **Loss and accuracy**
-| Trial ID | Hyperparameters | Loss | Accuracy |
-|----------|-----------------|------|----------|
-| Trial 01 |  |  |  |
-| Trial 02 |  |  |  |
-
+| Trial ID | Accuracy | Loss | 
+|----------|----------|------|
+| Trial 01 |  ![Trial 01_acc](svm/plots/1.png) | ![Trial 01_loss](svm/plots/2.png) |
+| Trial 02 |  ![Trial 02_acc](svm/plots/3.png) | ![Trial 02_loss](svm/plots/4.png) |
+| Trial 03 |  ![Trial 01_acc](svm/plots/5.png) | ![Trial 01_loss](svm/plots/6.png) |
 
 ## Multi-Layer Perceptron (MLP)
 **Best Hyperparameters:**
