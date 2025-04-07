@@ -127,7 +127,7 @@ pip install -e .
 
 ## Contributors
 
-- Nathan Djwerter
+- Richmond Tetteh Djwerter
 - Raunak Pillai
 - Kaushik Raghupathruni
 - Nathan Wegmann
