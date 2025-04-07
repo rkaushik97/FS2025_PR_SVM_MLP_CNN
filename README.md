@@ -6,6 +6,9 @@ This repository contains implementations of three different classification metho
 
 ```
 FS2025_PR_SVM_MLP_CNN/
+├── mlp/
+│   └── plots/                # Learning curves and performance visualizations
+│       └── *.png
 ├── MLP.ipynb                 # Jupyter notebook with MLP implementation and experiments
 ├── cnn/                      # CNN implementation directory
 │   ├── logs.txt              # Training logs and experiment results
