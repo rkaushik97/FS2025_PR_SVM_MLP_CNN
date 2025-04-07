@@ -7,6 +7,13 @@
 
 **Test Accuracy:** `0.9979`
 
+**Loss and accuracy**
+| Trial ID | Hyperparameters | Loss | Accuracy |
+|----------|-----------------|------|----------|
+| Trial 01 |  |  |  |
+| Trial 02 |  |  |  |
+
+
 ## Multi-Layer Perceptron (MLP)
 **Best Hyperparameters:**
 - Hidden Size = 256
