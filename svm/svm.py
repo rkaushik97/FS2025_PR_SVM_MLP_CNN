@@ -8,6 +8,24 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import joblib
 
+param1={
+    'svm__C': [0.1, 1, 10],
+    'svm__kernel': ['linear', 'rbf'],
+    'svm__gamma': [0.01, 0.001]
+}
+
+param2={
+      'svm__kernel': ['rbf'],
+      'svm__C': [5,  10, 20],
+      'svm__gamma': [5e-4, 0.001, 0.002],
+}
+
+param3 = {
+    'svm__kernel': ['rbf'],
+    'svm__C': [9, 10, 11],
+    'svm__gamma': [0.0009, 0.001, 0.0011]
+}
+
 tuning_pipeline = Pipeline([
     ('scaler', StandardScaler()),
     ('pca', PCA(n_components=0.93)),
@@ -17,7 +35,7 @@ tuning_pipeline = Pipeline([
 model = Pipeline([
     ('scaler', StandardScaler()),
     ('pca', PCA(n_components=0.93)),
-    ('svm', SVC(C=10, gamma=0.001, kernel='rbf', class_weight='balanced'))
+    ('svm', SVC(C=9, gamma=0.0011, kernel='rbf', class_weight='balanced'))
 ])
 
 def prepare_data(data_path):
@@ -50,25 +68,17 @@ X_smaller, _, y_smaller, _ = train_test_split(X_train, y_train, train_size = 0.4
 
 # FIND BEST HYPERPARAMETERS:
 # find_best_params("data/train.csv")
-# Best parameters: {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+# Best parameters: {'C': 9, 'gamma': 0.0011, 'kernel': 'rbf'}
+
+
 
 # #TEST MODEL:
-#print("Training")
-#model.fit(X_train, y_train)
+print("Training")
+model.fit(X_train, y_train)
 # #STORE MODEL:
-#joblib.dump(model, "svm_model.joblib")
-#test_model(model, X_test=X_test, y_test=y_test)
+joblib.dump(model, "svm_model.joblib")
+test_model(model, X_test=X_test, y_test=y_test)
 # #SVM: Improve Accuracy: 0.9745 -> 0.9756
 
-# #TRAIN FINAL MODEL:
-# X_final = pd.concat([X_train, X_test], axis=0)
-# y_final = pd.concat([y_train, y_test], axis=0)
-# print("Training on combined dataset")
-# model.fit(X_final, y_final)
 
-# # Save the final model
-# joblib.dump(model, "svm_model_final.joblib")
-# print("Final model saved as 'svm_model_final.joblib'")
-
-
-test_model(joblib.load("svm_model_final.joblib"), X_test=X_test, y_test=y_test)
+#test_model(joblib.load("svm_model.joblib"), X_test=X_test, y_test=y_test)
