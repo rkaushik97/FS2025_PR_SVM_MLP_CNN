@@ -40,7 +40,7 @@ Each image is a 28x28 grayscale representation of a handwritten digit (0-9).
 
 The SVM implementation explores different kernels (linear and RBF) and optimizes hyperparameters through cross-validation.
 
-- **Location**: `svm/` directory
+- **Location**: `svm/` directory and `svm.ipynb`
 - **Key Features**:
   - Kernel comparison
   - Hyperparameter optimization
@@ -88,11 +88,7 @@ pip install -e .
 ### Running the Models
 
 1. **SVM**:
-   ```bash
-   cd svm
-   python svm.py
-   ```
-   Or open `svm.ipynb` in Jupyter.
+   Open `svm.ipynb` in Jupyter.
 
 2. **MLP**:
    Open `MLP.ipynb` in Jupyter and run all cells.
