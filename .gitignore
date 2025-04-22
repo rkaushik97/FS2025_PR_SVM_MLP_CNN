@@ -8,6 +8,7 @@ __pycache__/
 
 #data folder
 data/
+competition1/Fashion-MNIST/
 
 # C extensions
 *.so
